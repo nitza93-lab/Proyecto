@@ -1,0 +1,32 @@
+# --- Android Studio ---
+*.iml
+.gradle/
+.local.properties
+/.idea/
+/build/
+/captures/
+.externalNativeBuild/
+*.apk
+*.aab
+*.keystore
+
+# --- Django/Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+env/
+venv/
+*.log
+db.sqlite3
+/media/
+/staticfiles/
+
+# --- Entorno/secretos ---
+.env
+*.env
+
+# --- Sistema operativo ---
+Thumbs.db
+.DS_Store

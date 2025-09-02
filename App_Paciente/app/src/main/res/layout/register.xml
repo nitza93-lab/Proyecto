@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="443dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="175dp"
+            android:layout_height="163dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.239"
+            app:srcCompat="@drawable/add_contacts_logo" />
+
+        <EditText
+            android:id="@+id/editTextText_name"
+            android:layout_width="294dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:hint="Nombre"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.028" />
+
+        <EditText
+            android:id="@+id/editText_user"
+            android:layout_width="293dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Usuario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText_name"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="UnknownId" />
+
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="293dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Correo electrónico"
+            app:layout_constraintBottom_toTopOf="@+id/editText_pass"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_user" />
+
+        <EditText
+            android:id="@+id/editText_pass"
+            android:layout_width="293dp"
+            android:layout_height="48dp"
+            android:drawableEnd="@drawable/ic_eye_off"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/contrase_a"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+
+        <EditText
+            android:id="@+id/editText_pass2"
+            android:layout_width="293dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:drawableEnd="@drawable/ic_eye_off"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Confirmar Contraseña"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_pass" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_register"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="182dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Crear cuenta"
+            android:textColor="@color/white"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_pass2"
+            app:layout_constraintVertical_bias="0.124"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
