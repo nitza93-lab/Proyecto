@@ -1,6 +1,7 @@
 # users/serializers.py
 from django.contrib.auth.models import User
 from rest_framework import serializers
+from .models import PerfilUsuario
 
 class UserRegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
@@ -20,3 +21,11 @@ class UserRegisterSerializer(serializers.ModelSerializer):
             user.set_password(password)
             user.save()
             return user
+
+
+
+#Perfil clínico del paciente
+class PerfilUsuarioSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PerfilUsuario
+        fields = '__all__'
