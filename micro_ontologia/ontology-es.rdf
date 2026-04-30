@@ -1,0 +1,2869 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/"
+     xml:base="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:CDMOnto="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#"
+     xmlns:untitled-ontology-es="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es">
+        <rdfs:comment>Esta ontología utiliza como referencia principal la Norma Oficial Mexicana NOM-015-SSA2-2010 para la prevención, tratamiento y control de la diabetes mellitus.
+Además, se incorporan tratamientos y medicamentos modernos utilizados en guías internacionales recientes, como la American Diabetes Association (ADA) y la International Diabetes Federation (IDF).
+Las recomendaciones generadas por el sistema son informativas y no sustituyen la valoración médica.
+Cualquier medicamento, ajuste de dosis o modificación terapéutica debe ser autorizado exclusivamente por un profesional de la salud.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Genero"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneSintomas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneSintomas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#SymptomPrediabetes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#SintomasPost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tomaMedicamento -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tomaMedicamento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#esTratamientoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#esTratamientoDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#realizaTestDiag -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#realizaTestDiag">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneClaseFarma -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneClaseFarma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecAlimento -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecAlimento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecDieta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecDieta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tienePeso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tienePeso">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#hasBMIValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#hasBMIValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#noToleraMetformina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#noToleraMetformina">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneAltura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneAltura">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneConcentracion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneConcentracion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneCorreo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneCorreo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectoMax -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectoMax">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectosSec -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectosSec">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneGlucemiaProm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneGlucemiaProm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneInicioMinutos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneInicioMinutos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneNombreCompleto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneNombreCompleto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePresentacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePresentacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRacionRec -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRacionRec">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRangoNormal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRangoNormal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUnidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUnidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUsuario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUsuario">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Genero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Genero"/>
+    
+
+
+    <!-- http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#SymptomPrediabetes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#SymptomPrediabetes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#AgonistaGLP1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#AgonistaGLP1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedInyectables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#BajoPeso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#BajoPeso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Fruta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Fruta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedInyectables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedCombinados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedCombinados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedInyectables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedInyectables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PesoNormal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PesoNormal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#SintomasPost -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#SintomasPost"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sobrepeso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sobrepeso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Femenino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Femenino"/>
+    
+
+
+    <!-- http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Masculino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Masculino"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Acarbosa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Acarbosa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alogliptina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alogliptina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Aspart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Aspart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida"/>
+        <untitled-ontology-es:tieneTipoClinico rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus"/>
+        <untitled-ontology-6:tieneNombre>Insulin Aspart</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina"/>
+        <rdfs:comment>Las insulinas basales -tambiénllamadas de acción prolongada o de fondo- se administran una o dos veces al día, normalmente por la mañana o al acostarse. Actúan lentamente para mantener estables los niveles de glucosa en sangre durante la noche o entre las comidas.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Biguanidas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Biguanidas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina"/>
+        <rdfs:comment>Las insulinas en bolo, que suelen administrarse antes de las comidas, actúan rápidamente para ayudar a controlar el rápido aumento de los niveles de glucosa después de comer. Algunas insulinas son una mezcla de insulina de fondo de acción lenta e insulina de acción rápida para las comidas.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Canagliflozina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Canagliflozina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes"/>
+        <rdfs:comment>Cromosoma 12, HNF-1 alfa (antes MODY 3).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes"/>
+        <rdfs:comment>Cromosoma 20, HNF-4 alfa (antes MODY 1).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes"/>
+        <rdfs:comment>Cromosoma 7, glucocinasa (antes MODY 2).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Dapagliflozina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Dapagliflozina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Degludec -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Degludec">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada"/>
+        <untitled-ontology-es:tieneTipoClinico rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal"/>
+        <untitled-ontology-6:tieneNombre>Insulin Degludec</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Detemir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Detemir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada"/>
+        <untitled-ontology-es:tieneTipoClinico rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal"/>
+        <untitled-ontology-6:tieneNombre>Insulin Detemir</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Empagliflozina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Empagliflozina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+        <untitled-ontology-es:tieneViaAdmin>Oral</untitled-ontology-es:tieneViaAdmin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Ertugliflozina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Ertugliflozina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GLP-1_agonistas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GLP-1_agonistas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gestacional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gestacional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gestational_Diabetes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gestational_Diabetes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada"/>
+        <untitled-ontology-es:tieneTipoClinico rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal"/>
+        <untitled-ontology-6:tieneNombre>Insulin Glargine</untitled-ontology-6:tieneNombre>
+        <untitled-ontology-es:tieneViaAdmin>Subcutánea</untitled-ontology-es:tieneViaAdmin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glibenclamida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glibenclamida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gliclazida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gliclazida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glimepirida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glimepirida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glipizida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glipizida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glulisine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glulisine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida"/>
+        <untitled-ontology-es:tieneTipoClinico rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus"/>
+        <untitled-ontology-6:tieneNombre>Insulin Glulisine</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_BajoPeso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_BajoPeso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#BajoPeso"/>
+        <untitled-ontology-es:tieneIMCMAx rdf:datatype="http://www.w3.org/2001/XMLSchema#double">18.4</untitled-ontology-es:tieneIMCMAx>
+        <untitled-ontology-es:tieneIMCMin rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</untitled-ontology-es:tieneIMCMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC"/>
+        <untitled-ontology-es:tieneIMCMAx rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34.9</untitled-ontology-es:tieneIMCMAx>
+        <untitled-ontology-es:tieneIMCMin rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</untitled-ontology-es:tieneIMCMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoII -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoII">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC"/>
+        <untitled-ontology-es:tieneIMCMAx rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.9</untitled-ontology-es:tieneIMCMAx>
+        <untitled-ontology-es:tieneIMCMin rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.0</untitled-ontology-es:tieneIMCMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoIII -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoIII">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC"/>
+        <untitled-ontology-es:tieneIMCMAx rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</untitled-ontology-es:tieneIMCMAx>
+        <untitled-ontology-es:tieneIMCMin rdf:datatype="http://www.w3.org/2001/XMLSchema#double">40.0</untitled-ontology-es:tieneIMCMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_PesoNormal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_PesoNormal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PesoNormal"/>
+        <untitled-ontology-es:tieneIMCMAx rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.9</untitled-ontology-es:tieneIMCMAx>
+        <untitled-ontology-es:tieneIMCMin rdf:datatype="http://www.w3.org/2001/XMLSchema#double">18.5</untitled-ontology-es:tieneIMCMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sobrepeso"/>
+        <untitled-ontology-es:tieneIMCMAx rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.9</untitled-ontology-es:tieneIMCMAx>
+        <untitled-ontology-es:tieneIMCMin rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.0</untitled-ontology-es:tieneIMCMin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_DPP-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_DPP-4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_SGLT2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_SGLT2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_alfa-glucosidasa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_alfa-glucosidasa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulinas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulinas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Linagliptina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Linagliptina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Liraglutina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Liraglutina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#AgonistaGLP1"/>
+        <untitled-ontology-es:tieneViaAdmin>Subcutánea</untitled-ontology-es:tieneViaAdmin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida"/>
+        <untitled-ontology-es:tieneTipoClinico rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus"/>
+        <untitled-ontology-6:tieneNombre>Insulin Lipro</untitled-ontology-6:tieneNombre>
+        <untitled-ontology-es:tieneViaAdmin>Subcutánea</untitled-ontology-es:tieneViaAdmin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Meglitinidas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Meglitinidas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+        <untitled-ontology-es:tieneViaAdmin>Oral</untitled-ontology-es:tieneViaAdmin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_50_50 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_50_50">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_70_30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_70_30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_75_25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_75_25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Miglitol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Miglitol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mixed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mixed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mixed"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina"/>
+        <rdfs:comment>Las insulinas mixtas se administran antes de las comidas sin insulina basal a una hora diferente. Pueden ser una combinación de insulina de acción corta e intermedia o de insulina de acción rápida e intermedia. La insulina está premezclada y es turbia en lugar de transparente.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia"/>
+        <untitled-ontology-es:tieneTipoClinico rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal"/>
+        <untitled-ontology-6:tieneNombre>Insulin NPH</untitled-ontology-6:tieneNombre>
+        <untitled-ontology-es:tieneViaAdmin>Subcutánea</untitled-ontology-es:tieneViaAdmin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Nateglinida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Nateglinida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciene_T1_Joven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciene_T1_Joven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <untitled-ontology-6:tieneGenero rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Femenino"/>
+        <untitled-ontology-6:tieneTipoDM rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1"/>
+        <untitled-ontology-es:tieneEstadoIMC rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_PesoNormal"/>
+        <untitled-ontology-6:tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</untitled-ontology-6:tieneEdad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <untitled-ontology-6:tieneGenero rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Masculino"/>
+        <untitled-ontology-6:tieneTipoDM rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1"/>
+        <untitled-ontology-6:tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">19</untitled-ontology-6:tieneEdad>
+        <rdfs:comment>Hombre 19 años DM1 sin comorbilidades</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <untitled-ontology-6:tieneTipoDM rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2"/>
+        <untitled-ontology-es:tieneEstadoIMC rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso"/>
+        <untitled-ontology-6:tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">47</untitled-ontology-6:tieneEdad>
+        <rdfs:comment>Mujer 47 años DM2 con Sobrepeso</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <untitled-ontology-6:tieneGenero rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Femenino"/>
+        <untitled-ontology-6:tieneTipoDM rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2"/>
+        <CDMOnto:tieneComorbilidad rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal"/>
+        <untitled-ontology-6:tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">63</untitled-ontology-6:tieneEdad>
+        <rdfs:comment>Hombre 62 años DM2 + ERC</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <untitled-ontology-6:tieneTipoDM rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Prediabetes"/>
+        <untitled-ontology-6:tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#int">35</untitled-ontology-6:tieneEdad>
+        <untitled-ontology-6:tieneNombre>Ana</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <untitled-ontology-6:tieneTipoDM rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1"/>
+        <CDMOnto:tieneComorbilidad rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipoglucemiaFrec"/>
+        <untitled-ontology-6:tieneEdad rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-6:tieneEdad>
+        <untitled-ontology-6:tieneNombre>Luis</untitled-ontology-6:tieneNombre>
+        <rdfs:comment>Hombre 30 años DM1 + hipoglucemias</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Pioglitazona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Pioglitazona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Prediabetes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Prediabetes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta"/>
+        <untitled-ontology-es:tieneTipoClinico rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus"/>
+        <untitled-ontology-6:tieneNombre>Insulin Human Regular</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Repaglinida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Repaglinida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Rosiglitazona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Rosiglitazona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Saxagliptina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Saxagliptina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Semaglutida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Semaglutida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#AgonistaGLP1"/>
+        <untitled-ontology-es:tieneViaAdmin>Subcutánea</untitled-ontology-es:tieneViaAdmin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sitagliptina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sitagliptina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sulfonilureas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sulfonilureas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#T1_DM1_Basal_Bolus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#T1_DM1_Basal_Bolus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tiazolidinedionas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tiazolidinedionas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_AgonistaGLP1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_AgonistaGLP1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Liraglutina"/>
+        <untitled-ontology-es:tieneDosisRec>0.6–1.8 mg</untitled-ontology-es:tieneDosisRec>
+        <untitled-ontology-es:tieneFrecuencia>1 vez/día&quot;</untitled-ontology-es:tieneFrecuencia>
+        <rdfs:comment>Obesidad + Hipertensión</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_EstiloDeVida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_EstiloDeVida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:tieneFrecuencia>Diaria</untitled-ontology-es:tieneFrecuencia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Dieta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Dieta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <rdfs:comment>Diabetes gestacional controlada. Dieta y ejercicio</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Insulina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Insulina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH"/>
+        <untitled-ontology-es:tieneFrecuencia>Como considere el médico.</untitled-ontology-es:tieneFrecuencia>
+        <rdfs:comment>Diabetes gestacional con glucosa descontrolada</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro"/>
+        <untitled-ontology-es:tieneFrecuencia>1 vez/día (basal) y 3 veces/día (rápida)</untitled-ontology-es:tieneFrecuencia>
+        <rdfs:comment>Diabetes tipo1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaNPH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaNPH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH"/>
+        <untitled-ontology-es:tieneDosisRec>Individualizada. (24 unidades en la primera frecuencia y 12 en la segunda)</untitled-ontology-es:tieneDosisRec>
+        <untitled-ontology-es:tieneFrecuencia>2 veces/día</untitled-ontology-es:tieneFrecuencia>
+        <rdfs:comment>Tipo 2 con ERC (Renal crónica)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina"/>
+        <untitled-ontology-es:tieneDosisRec>850 mg&quot;</untitled-ontology-es:tieneDosisRec>
+        <untitled-ontology-es:tieneFrecuencia>2 veces/día</untitled-ontology-es:tieneFrecuencia>
+        <rdfs:comment>Diabetes Tipo2 primera línea</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Basal_Degludec -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Basal_Degludec">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Degludec"/>
+        <untitled-ontology-es:tieneComentarioClinico>Basal ultralarga (Degludec). Recomendada por ADA por menor hipoglucemia</untitled-ontology-es:tieneComentarioClinico>
+        <rdfs:comment>Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Prandial_Lispro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Prandial_Lispro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro"/>
+        <untitled-ontology-es:tieneComentarioClinico>Prandial rápida (Lispro/Aspart). Prandial moderna de acción rápida</untitled-ontology-es:tieneComentarioClinico>
+        <rdfs:comment>Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_GLP1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_GLP1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Semaglutida"/>
+        <untitled-ontology-es:tieneComentarioClinico>GLP-1 (Semaglutida). Recomendado en obesidad y riesgo CV.</untitled-ontology-es:tieneComentarioClinico>
+        <rdfs:comment>Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Semaglutida"/>
+        <untitled-ontology-es:tieneComentarioClinico>Metformina + GLP-1, combinación ampliamente usada actual.</untitled-ontology-es:tieneComentarioClinico>
+        <untitled-ontology-es:tieneDosisRec>Ajuste individual según respuesta clínica y tolerancia</untitled-ontology-es:tieneDosisRec>
+        <untitled-ontology-es:tieneFrecuencia>Según prescripción médica</untitled-ontology-es:tieneFrecuencia>
+        <rdfs:comment>Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Empagliflozina"/>
+        <untitled-ontology-es:tieneComentarioClinico>Beneficio renal y cardiovascular.</untitled-ontology-es:tieneComentarioClinico>
+        <untitled-ontology-es:tieneDosisRec>Ajuste individual según respuesta clínica y tolerancia</untitled-ontology-es:tieneDosisRec>
+        <untitled-ontology-es:tieneFrecuencia>Según prescripción médica</untitled-ontology-es:tieneFrecuencia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular"/>
+        <untitled-ontology-es:tieneComentarioClinico>Incluido en NOM-015-SSA2-2010</untitled-ontology-es:tieneComentarioClinico>
+        <untitled-ontology-es:tieneDosisRec>Ajuste individual por peso y glucosa capilar</untitled-ontology-es:tieneDosisRec>
+        <untitled-ontology-es:tieneFrecuencia>Regular antes de comidas + NPH 1–2 veces/día</untitled-ontology-es:tieneFrecuencia>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular"/>
+        <untitled-ontology-es:tieneComentarioClinico>Recomendación NOM-015 para ERC avanzada.</untitled-ontology-es:tieneComentarioClinico>
+        <rdfs:comment>Pacientes Tipo2 con Insuficiencia renal crónica</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glibenclamida"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina"/>
+        <untitled-ontology-es:tieneComentarioClinico>Escalamiento terapéutico conforme a NOM-015-2010.</untitled-ontology-es:tieneComentarioClinico>
+        <rdfs:comment>Escalamiento — Metformina + Glibenclamida</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina"/>
+        <untitled-ontology-es:tieneComentarioClinico>Tratamiento base según NOM-015-2010.</untitled-ontology-es:tieneComentarioClinico>
+        <untitled-ontology-es:tieneDosisRec>Incremento progresivo; ajustar según función renal</untitled-ontology-es:tieneDosisRec>
+        <untitled-ontology-es:tieneFrecuencia>1–2 veces/día</untitled-ontology-es:tieneFrecuencia>
+        <rdfs:comment>Primer línea — Metformina</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Sulfonilurea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Sulfonilurea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:usaMedicamento rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glibenclamida"/>
+        <untitled-ontology-es:tieneComentarioClinico>Alternativa NOM-015 en pacientes que no toleran metformina</untitled-ontology-es:tieneComentarioClinico>
+        <rdfs:comment>Monoterapia — Glibenclamida</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_Prediabetes_EstiloVida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_Prediabetes_EstiloVida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento"/>
+        <untitled-ontology-es:tieneComentarioClinico>Intervención en estilo de vida según NOM-015-2010.</untitled-ontology-es:tieneComentarioClinico>
+        <rdfs:comment>Prediabetes - NOM</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Vildagliptina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Vildagliptina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta"/>
+        <untitled-ontology-es:tieneDuracion>3-6 horas</untitled-ontology-es:tieneDuracion>
+        <untitled-ontology-es:tieneEfectoMax>2-3 horas</untitled-ontology-es:tieneEfectoMax>
+        <untitled-ontology-es:tieneInicioMinutos>30 minutos</untitled-ontology-es:tieneInicioMinutos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia"/>
+        <untitled-ontology-es:tieneDuracion>12-18 horas</untitled-ontology-es:tieneDuracion>
+        <untitled-ontology-es:tieneEfectoMax>4-12 horas</untitled-ontology-es:tieneEfectoMax>
+        <untitled-ontology-es:tieneInicioMinutos>2-4 horas</untitled-ontology-es:tieneInicioMinutos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada"/>
+        <untitled-ontology-es:tieneDuracion>Hasta 24 horas o más</untitled-ontology-es:tieneDuracion>
+        <untitled-ontology-es:tieneEfectoMax>Pico mínimo</untitled-ontology-es:tieneEfectoMax>
+        <untitled-ontology-es:tieneInicioMinutos>Varias horas después de la inyección</untitled-ontology-es:tieneInicioMinutos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina"/>
+        <untitled-ontology-es:tienePerfilAccion rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida"/>
+        <untitled-ontology-es:tieneDuracion>2-4 horas</untitled-ontology-es:tieneDuracion>
+        <untitled-ontology-es:tieneEfectoMax>1-2 horas</untitled-ontology-es:tieneEfectoMax>
+        <untitled-ontology-es:tieneInicioMinutos>15 minutos</untitled-ontology-es:tieneInicioMinutos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#aguacate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#aguacate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable"/>
+        <untitled-ontology-6:tieneNombre>Aguacate</untitled-ontology-6:tieneNombre>
+        <rdfs:label>Aceite de aguacate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#almendra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#almendra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable"/>
+        <untitled-ontology-6:tieneNombre>Almendra</untitled-ontology-6:tieneNombre>
+        <rdfs:label>Aceite de almendras</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#apple">
+        <untitled-ontology-6:tieneNombre>Apple</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#arroz_integral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#arroz_integral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral"/>
+        <untitled-ontology-6:tieneNombre>Arroz integal</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#avena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#avena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral"/>
+        <untitled-ontology-6:tieneNombre>Avena</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#berries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#berries">
+        <untitled-ontology-6:tieneNombre>Berries</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#brocoli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#brocoli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras"/>
+        <untitled-ontology-6:tieneNombre>Brocoli</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comCardiovascular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comCardiovascular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <rdfs:label>Enfermedad Cardiovascular</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipertension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipertension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <rdfs:label>Hipertensión</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipoglucemiaFrec -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipoglucemiaFrec">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comNeuropatiaD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comNeuropatiaD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <rdfs:label>Neuropatía Diabética</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comObesidad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comObesidad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <rdfs:label>Obesidad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comOtra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comOtra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comPeriodontal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comPeriodontal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <rdfs:label>Enfermedad Periodontal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <rdfs:label>Enfermedad Renal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRetinopatiaD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRetinopatiaD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <rdfs:label>Retinopatía Diabética</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#espinaca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#espinaca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras"/>
+        <untitled-ontology-6:tieneNombre>Espinacas</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#lechuga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#lechuga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras"/>
+        <untitled-ontology-6:tieneNombre>Lechuga</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#manzana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#manzana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Fruta"/>
+        <untitled-ontology-6:tieneNombre>Manzana</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#naranja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#naranja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Fruta"/>
+        <untitled-ontology-6:tieneNombre>Naranja</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#oliva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#oliva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable"/>
+        <untitled-ontology-6:tieneNombre>Aceite de oliva</untitled-ontology-6:tieneNombre>
+        <rdfs:label>Aceite de oliva</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#pechuga_pollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#pechuga_pollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra"/>
+        <untitled-ontology-6:tieneNombre>Pechuga de pollo</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#quinoa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#quinoa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral"/>
+        <untitled-ontology-6:tieneNombre>Quinoa</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AlimentosProcesados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AlimentosProcesados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Se sugiere limitar la ingesta de alimentos ultraprocesados y empaquetados.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Reducir alimentos procesados</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AumentarFibra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AumentarFibra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Promueve el consumo de alimentos ricos en fibra como legumbres, frutas y verduras.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Aumentar fibra dietética</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_BajoIG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_BajoIG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Sugiere elegir alimentos con bajo índice glucémico para favorecer el control de glucosa.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Preferir alimentos de bajo índice glucémico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Carbohidratos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Carbohidratos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Se recomienda la ingesta de alimentos y/o una dieta balanceado o con bajo niveles de carbohidratos.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Dieta baja en carbohidratos.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ComidasRegulares -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ComidasRegulares">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Promueve comer a horarios consistentes para apoyar la estabilidad metabólica.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Mantener horarios regulares de comida</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ControlPorciones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ControlPorciones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Manejar la cantidad de alimentos consumidos por comida.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Controlar tamaño de porciones</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_EvitarBebidasAzucaradas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_EvitarBebidasAzucaradas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Sugiere eliminar refrescos, bebidas endulzadas o jugos con azúcar añadida.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Evitar bebeidas azucaradas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosIntegrales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosIntegrales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Recomienda sustituir granos refinados por opciones integrales.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Aumentar consumo de granos integrales</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosRefinados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosRefinados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Aconseja reducir el consumo de pan blanco, arroz blanco y productos de harina refinada.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Limitar granos refinados</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GrasasSaludables -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GrasasSaludables">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Promueve el consumo de grasas insaturadas como aceite de oliva, nueces y aguacate.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Consumo de grasas saludables</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_LimitarAlimentosGIAlto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_LimitarAlimentosGIAlto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Limitar alimentos que elevan rápidamente la glucosa en sangre.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Limitar alimentos de alto índice glucémico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_PatronMediterraneo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_PatronMediterraneo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Recomienda adherirse a una dieta mediterránea rica en verduras, legumbres y grasas saludables.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Seguir patrón de dieta mediterránea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ReducirAzucar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ReducirAzucar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Es recomendable disminuir la ingesta de alimentos con azúcares añadidos.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Reducir el consumo de azúcar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Vegetales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Vegetales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta"/>
+        <untitled-ontology-es:tieneDescripcion>Sugiere incrementar las porciones diarias de verduras para mejorar el control metabólico.</untitled-ontology-es:tieneDescripcion>
+        <rdfs:label>Aumentar consumo de verduras</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#salmon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#salmon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra"/>
+        <untitled-ontology-6:tieneNombre>Salmon</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tofu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tofu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra"/>
+        <untitled-ontology-6:tieneNombre>Tofu</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#zanahoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#zanahoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras"/>
+        <untitled-ontology-6:tieneNombre>Zanahoria</untitled-ontology-6:tieneNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#AntiGAD">
+        <rdfs:comment>Anti-Glutamato Descarboxilasa</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#C_peptid">
+        <rdfs:comment>Niveles de peptido en sangre</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#FPG">
+        <rdfs:comment>Glucosa en ayunas</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#HBA1C">
+        <rdfs:comment>Hemoglobina A1c</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#HDL_Cholesterol">
+        <rdfs:comment>Colesterol de alta densidad</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Diabetes_Type5">
+        <rdfs:comment>La diabetes de tipo 5, antes conocida como diabetes mellitus relacionada con la malnutrición (DMRM). La DMRM se clasificó formalmente como diabetes de tipo 5 en una reunión internacional de expertos convocada en enero de 2025.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/estado">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>M5-DM2 ERC  SGLT2 preferido</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Regla-Insulina Acc_corta</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Insulinas con acción intermedia se clasifican como insulina basal</rdfs:comment>
+        <rdfs:label>Regla-Insulina Acc_intermedia</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Insulinas con acción prolongada se clasifican como insulina basal</rdfs:comment>
+        <rdfs:label>Regla-Insulina Acc_prolongada</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Si una insulina tiene un perfil de acción rápido, se clasifica automáticamente como insulina bolus (prandial), conforme a NOM y guías clínicas</rdfs:comment>
+        <rdfs:label>Regla-Insulina Acc_rapida</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/i"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>N5-Prediabetes</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Prediabetes"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_Prediabetes_EstiloVida"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>M1-DM1 Basal moderna</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Basal_Degludec"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>M2-DM1 Prandial moderna</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Prandial_Lispro"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Regla1-Diabetes tipo1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>M4-DM2 Obesidad GLP-1 o SGLT2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/estado"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/estado"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>N1-DM1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>M3-DM2 GLP-1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_GLP1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>N4-DM2 ERC</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Tipo 2 + sobrepeso: primera opción metformina + intervención en estilo de vida.</rdfs:comment>
+        <rdfs:label>Regla2A-Diabetes tipo2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>N3-DM2 Sobrepeso (NOM escalamiento)</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>N2-DM2 (primera linea)</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#noToleraMetformina"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>DM2 con intolerancia documentada a metformina → utilizar sulfonilurea como alternativa según NOM-015-SSA2-2010.</rdfs:comment>
+        <rdfs:label>N6-Intolerancia a Metformina</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#noToleraMetformina"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Sulfonilurea"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,3151 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es">
+    <Prefix name="" IRI="http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6</Import>
+    <Import>http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Esta ontología utiliza como referencia principal la Norma Oficial Mexicana NOM-015-SSA2-2010 para la prevención, tratamiento y control de la diabetes mellitus.
+Además, se incorporan tratamientos y medicamentos modernos utilizados en guías internacionales recientes, como la American Diabetes Association (ADA) y la International Diabetes Federation (IDF).
+Las recomendaciones generadas por el sistema son informativas y no sustituyen la valoración médica.
+Cualquier medicamento, ajuste de dosis o modificación terapéutica debe ser autorizado exclusivamente por un profesional de la salud.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgonistaGLP1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alimento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BajoPeso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClaseFarmacologica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EstadoIMC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GranoIntegral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrasaSaludable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insulina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedCombinados"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedInyectables"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedOrales"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicamentos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObesidadIMC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerfilAccionInsulina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PesoNormal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProteinaNegra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecomendDieta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SintomasPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sobrepeso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TipoClinicoInsulina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TipoDiabetes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tratamiento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Verduras"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esTratamientoDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#realizaTestDiag"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sugerenciaActual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneClaseFarma"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneEstadoIMC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneRecAlimento"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneRecDieta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneTipoClinico"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneTratamiento"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usaMedicamento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBMIValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#noToleraMetformina"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneAltura"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneConcentracion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneCorreo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneDescripcion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneDosisRec"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneDuracion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneEfectoMax"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneEfectosSec"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneFrecuencia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneGlucemiaProm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneIMCMAx"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneIMCMin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneInicioMinutos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNombreCompleto"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tienePass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tienePresentacion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneRacionRec"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneRangoNormal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneTipo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneUnidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneUsuario"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneViaAdmin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Acarbosa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alogliptina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aspart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Basal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Biguanidas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bolus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Canagliflozina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cromosoma_12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cromosoma_20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cromosoma_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dapagliflozina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Degludec"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Detemir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Empagliflozina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ertugliflozina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GLP-1_agonistas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gestacional"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gestational_Diabetes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Glargina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Glibenclamida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gliclazida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Glimepirida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Glipizida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Glulisine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IMC_BajoPeso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IMC_ObesoI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IMC_ObesoII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IMC_ObesoIII"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IMC_PesoNormal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IMC_SobrePeso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inhibidores_DPP-4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inhibidores_SGLT2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inhibidores_alfa-glucosidasa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Insulinas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Linagliptina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Liraglutina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lispro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meglitinidas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metformina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mezcla_50_50"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mezcla_70_30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mezcla_75_25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Miglitol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mixed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NPH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nateglinida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciene_T1_Joven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente_000001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente_000002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente_000003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente_000004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paciente_000005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pioglitazona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prediabetes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Regular"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Repaglinida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rosiglitazona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saxagliptina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Semaglutida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sitagliptina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sulfonilureas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T1_DM1_Basal_Bolus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tiazolidinedionas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tipo1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tipo2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tipo5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tratamiento_AgonistaGLP1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tratamiento_EstiloDeVida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tratamiento_Gestacional_Dieta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tratamiento_Gestacional_Insulina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tratamiento_InsulinaBasalPrandial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tratamiento_InsulinaNPH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tratamiento_Metformina_Dieta_Ejercicio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TxMOD_DM1_Basal_Degludec"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TxMOD_DM1_Prandial_Lispro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TxMOD_DM2_GLP1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TxMOD_DM2_Metf_GLP1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TxMOD_DM2_SGLT2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TxNOM_DM1_Regular_NPH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TxNOM_DM2_ERC_InsulinaHumana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TxNOM_DM2_Metf_Glib"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TxNOM_DM2_Metformina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TxNOM_DM2_Sulfonilurea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TxNOM_Prediabetes_EstiloVida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vildagliptina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acc_corta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acc_intermedia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acc_prolongada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acc_rapida"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aguacate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#almendra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#apple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arroz_integral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#avena"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#berries"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#brocoli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comCardiovascular"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comHipertension"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comHipoglucemiaFrec"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comNeuropatiaD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comObesidad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comOtra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comPeriodontal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comRenal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comRetinopatiaD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#espinaca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lechuga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#manzana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#naranja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oliva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pechuga_pollo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#quinoa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_AlimentosProcesados"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_AumentarFibra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_BajoIG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_Carbohidratos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_ComidasRegulares"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_ControlPorciones"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_EvitarBebidasAzucaradas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_GranosIntegrales"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_GranosRefinados"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_GrasasSaludables"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_LimitarAlimentosGIAlto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_PatronMediterraneo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_ReducirAzucar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rec_Vegetales"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salmon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tofu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#zanahoria"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AgonistaGLP1"/>
+        <Class IRI="#MedInyectables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BajoPeso"/>
+        <Class IRI="#EstadoIMC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fruta"/>
+        <Class IRI="#Alimento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GranoIntegral"/>
+        <Class IRI="#Alimento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrasaSaludable"/>
+        <Class IRI="#Alimento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insulina"/>
+        <Class IRI="#MedInyectables"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedCombinados"/>
+        <Class IRI="#Medicamentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedInyectables"/>
+        <Class IRI="#Medicamentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedOrales"/>
+        <Class IRI="#Medicamentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObesidadIMC"/>
+        <Class IRI="#EstadoIMC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PesoNormal"/>
+        <Class IRI="#EstadoIMC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProteinaNegra"/>
+        <Class IRI="#Alimento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sobrepeso"/>
+        <Class IRI="#EstadoIMC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Verduras"/>
+        <Class IRI="#Alimento"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Acarbosa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Alogliptina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insulina"/>
+        <NamedIndividual IRI="#Aspart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Las insulinas basales -tambiénllamadas de acción prolongada o de fondo- se administran una o dos veces al día, normalmente por la mañana o al acostarse. Actúan lentamente para mantener estables los niveles de glucosa en sangre durante la noche o entre las comidas.</Literal>
+        </Annotation>
+        <Class IRI="#TipoClinicoInsulina"/>
+        <NamedIndividual IRI="#Basal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClaseFarmacologica"/>
+        <NamedIndividual IRI="#Biguanidas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Las insulinas en bolo, que suelen administrarse antes de las comidas, actúan rápidamente para ayudar a controlar el rápido aumento de los niveles de glucosa después de comer. Algunas insulinas son una mezcla de insulina de fondo de acción lenta e insulina de acción rápida para las comidas.</Literal>
+        </Annotation>
+        <Class IRI="#TipoClinicoInsulina"/>
+        <NamedIndividual IRI="#Bolus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Canagliflozina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TipoDiabetes"/>
+        <NamedIndividual IRI="#Cromosoma_12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TipoDiabetes"/>
+        <NamedIndividual IRI="#Cromosoma_20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TipoDiabetes"/>
+        <NamedIndividual IRI="#Cromosoma_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Dapagliflozina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insulina"/>
+        <NamedIndividual IRI="#Degludec"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insulina"/>
+        <NamedIndividual IRI="#Detemir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Empagliflozina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Ertugliflozina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClaseFarmacologica"/>
+        <NamedIndividual IRI="#GLP-1_agonistas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TipoDiabetes"/>
+        <NamedIndividual IRI="#Gestacional"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insulina"/>
+        <NamedIndividual IRI="#Glargina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Glibenclamida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Gliclazida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Glimepirida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Glipizida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insulina"/>
+        <NamedIndividual IRI="#Glulisine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BajoPeso"/>
+        <NamedIndividual IRI="#IMC_BajoPeso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObesidadIMC"/>
+        <NamedIndividual IRI="#IMC_ObesoI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObesidadIMC"/>
+        <NamedIndividual IRI="#IMC_ObesoII"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ObesidadIMC"/>
+        <NamedIndividual IRI="#IMC_ObesoIII"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PesoNormal"/>
+        <NamedIndividual IRI="#IMC_PesoNormal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sobrepeso"/>
+        <NamedIndividual IRI="#IMC_SobrePeso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClaseFarmacologica"/>
+        <NamedIndividual IRI="#Inhibidores_DPP-4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClaseFarmacologica"/>
+        <NamedIndividual IRI="#Inhibidores_SGLT2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClaseFarmacologica"/>
+        <NamedIndividual IRI="#Inhibidores_alfa-glucosidasa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClaseFarmacologica"/>
+        <NamedIndividual IRI="#Insulinas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Linagliptina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AgonistaGLP1"/>
+        <NamedIndividual IRI="#Liraglutina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insulina"/>
+        <NamedIndividual IRI="#Lispro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClaseFarmacologica"/>
+        <NamedIndividual IRI="#Meglitinidas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Metformina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insulina"/>
+        <NamedIndividual IRI="#Mezcla_50_50"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insulina"/>
+        <NamedIndividual IRI="#Mezcla_70_30"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insulina"/>
+        <NamedIndividual IRI="#Mezcla_75_25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Miglitol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Las insulinas mixtas se administran antes de las comidas sin insulina basal a una hora diferente. Pueden ser una combinación de insulina de acción corta e intermedia o de insulina de acción rápida e intermedia. La insulina está premezclada y es turbia en lugar de transparente.</Literal>
+        </Annotation>
+        <Class IRI="#TipoClinicoInsulina"/>
+        <NamedIndividual IRI="#Mixed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insulina"/>
+        <NamedIndividual IRI="#NPH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Nateglinida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <NamedIndividual IRI="#Paciene_T1_Joven"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <NamedIndividual IRI="#Paciente_000001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <NamedIndividual IRI="#Paciente_000002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <NamedIndividual IRI="#Paciente_000003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <NamedIndividual IRI="#Paciente_000004"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+        <NamedIndividual IRI="#Paciente_000005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Pioglitazona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TipoDiabetes"/>
+        <NamedIndividual IRI="#Prediabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Insulina"/>
+        <NamedIndividual IRI="#Regular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Repaglinida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Rosiglitazona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Saxagliptina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AgonistaGLP1"/>
+        <NamedIndividual IRI="#Semaglutida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Sitagliptina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClaseFarmacologica"/>
+        <NamedIndividual IRI="#Sulfonilureas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#T1_DM1_Basal_Bolus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClaseFarmacologica"/>
+        <NamedIndividual IRI="#Tiazolidinedionas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TipoDiabetes"/>
+        <NamedIndividual IRI="#Tipo1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TipoDiabetes"/>
+        <NamedIndividual IRI="#Tipo2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TipoDiabetes"/>
+        <NamedIndividual IRI="#Tipo5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#Tratamiento_AgonistaGLP1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#Tratamiento_EstiloDeVida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#Tratamiento_Gestacional_Dieta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#Tratamiento_Gestacional_Insulina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#Tratamiento_InsulinaBasalPrandial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#Tratamiento_InsulinaNPH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#Tratamiento_Metformina_Dieta_Ejercicio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#TxMOD_DM1_Basal_Degludec"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#TxMOD_DM1_Prandial_Lispro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#TxMOD_DM2_GLP1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#TxMOD_DM2_Metf_GLP1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#TxMOD_DM2_SGLT2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#TxNOM_DM1_Regular_NPH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#TxNOM_DM2_ERC_InsulinaHumana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Metf_Glib"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Metformina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Sulfonilurea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tratamiento"/>
+        <NamedIndividual IRI="#TxNOM_Prediabetes_EstiloVida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MedOrales"/>
+        <NamedIndividual IRI="#Vildagliptina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PerfilAccionInsulina"/>
+        <NamedIndividual IRI="#acc_corta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PerfilAccionInsulina"/>
+        <NamedIndividual IRI="#acc_intermedia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PerfilAccionInsulina"/>
+        <NamedIndividual IRI="#acc_prolongada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PerfilAccionInsulina"/>
+        <NamedIndividual IRI="#acc_rapida"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrasaSaludable"/>
+        <NamedIndividual IRI="#aguacate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrasaSaludable"/>
+        <NamedIndividual IRI="#almendra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GranoIntegral"/>
+        <NamedIndividual IRI="#arroz_integral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GranoIntegral"/>
+        <NamedIndividual IRI="#avena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verduras"/>
+        <NamedIndividual IRI="#brocoli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <NamedIndividual IRI="#comCardiovascular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <NamedIndividual IRI="#comHipertension"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <NamedIndividual IRI="#comHipoglucemiaFrec"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <NamedIndividual IRI="#comNeuropatiaD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <NamedIndividual IRI="#comObesidad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <NamedIndividual IRI="#comOtra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <NamedIndividual IRI="#comPeriodontal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <NamedIndividual IRI="#comRenal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+        <NamedIndividual IRI="#comRetinopatiaD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verduras"/>
+        <NamedIndividual IRI="#espinaca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verduras"/>
+        <NamedIndividual IRI="#lechuga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruta"/>
+        <NamedIndividual IRI="#manzana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruta"/>
+        <NamedIndividual IRI="#naranja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrasaSaludable"/>
+        <NamedIndividual IRI="#oliva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProteinaNegra"/>
+        <NamedIndividual IRI="#pechuga_pollo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GranoIntegral"/>
+        <NamedIndividual IRI="#quinoa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_AlimentosProcesados"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_AumentarFibra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_BajoIG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_Carbohidratos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_ComidasRegulares"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_ControlPorciones"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_EvitarBebidasAzucaradas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_GranosIntegrales"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_GranosRefinados"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_GrasasSaludables"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_LimitarAlimentosGIAlto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_PatronMediterraneo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_ReducirAzucar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RecomendDieta"/>
+        <NamedIndividual IRI="#rec_Vegetales"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProteinaNegra"/>
+        <NamedIndividual IRI="#salmon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProteinaNegra"/>
+        <NamedIndividual IRI="#tofu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Verduras"/>
+        <NamedIndividual IRI="#zanahoria"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#Aspart"/>
+        <NamedIndividual IRI="#acc_rapida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneTipoClinico"/>
+        <NamedIndividual IRI="#Aspart"/>
+        <NamedIndividual IRI="#Bolus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#Degludec"/>
+        <NamedIndividual IRI="#acc_prolongada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneTipoClinico"/>
+        <NamedIndividual IRI="#Degludec"/>
+        <NamedIndividual IRI="#Basal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#Detemir"/>
+        <NamedIndividual IRI="#acc_prolongada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneTipoClinico"/>
+        <NamedIndividual IRI="#Detemir"/>
+        <NamedIndividual IRI="#Basal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#Glargina"/>
+        <NamedIndividual IRI="#acc_prolongada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneTipoClinico"/>
+        <NamedIndividual IRI="#Glargina"/>
+        <NamedIndividual IRI="#Basal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#Glulisine"/>
+        <NamedIndividual IRI="#acc_rapida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneTipoClinico"/>
+        <NamedIndividual IRI="#Glulisine"/>
+        <NamedIndividual IRI="#Bolus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#Lispro"/>
+        <NamedIndividual IRI="#acc_rapida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneTipoClinico"/>
+        <NamedIndividual IRI="#Lispro"/>
+        <NamedIndividual IRI="#Bolus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#NPH"/>
+        <NamedIndividual IRI="#acc_intermedia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneTipoClinico"/>
+        <NamedIndividual IRI="#NPH"/>
+        <NamedIndividual IRI="#Basal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero"/>
+        <NamedIndividual IRI="#Paciene_T1_Joven"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Femenino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+        <NamedIndividual IRI="#Paciene_T1_Joven"/>
+        <NamedIndividual IRI="#Tipo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneEstadoIMC"/>
+        <NamedIndividual IRI="#Paciene_T1_Joven"/>
+        <NamedIndividual IRI="#IMC_PesoNormal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero"/>
+        <NamedIndividual IRI="#Paciente_000001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Masculino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+        <NamedIndividual IRI="#Paciente_000001"/>
+        <NamedIndividual IRI="#Tipo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+        <NamedIndividual IRI="#Paciente_000002"/>
+        <NamedIndividual IRI="#Tipo2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneEstadoIMC"/>
+        <NamedIndividual IRI="#Paciente_000002"/>
+        <NamedIndividual IRI="#IMC_SobrePeso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero"/>
+        <NamedIndividual IRI="#Paciente_000003"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Femenino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+        <NamedIndividual IRI="#Paciente_000003"/>
+        <NamedIndividual IRI="#Tipo2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad"/>
+        <NamedIndividual IRI="#Paciente_000003"/>
+        <NamedIndividual IRI="#comRenal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+        <NamedIndividual IRI="#Paciente_000004"/>
+        <NamedIndividual IRI="#Prediabetes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+        <NamedIndividual IRI="#Paciente_000005"/>
+        <NamedIndividual IRI="#Tipo1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad"/>
+        <NamedIndividual IRI="#Paciente_000005"/>
+        <NamedIndividual IRI="#comHipoglucemiaFrec"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#Regular"/>
+        <NamedIndividual IRI="#acc_corta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneTipoClinico"/>
+        <NamedIndividual IRI="#Regular"/>
+        <NamedIndividual IRI="#Bolus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#T1_DM1_Basal_Bolus"/>
+        <NamedIndividual IRI="#Glargina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#T1_DM1_Basal_Bolus"/>
+        <NamedIndividual IRI="#Lispro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#Tratamiento_AgonistaGLP1"/>
+        <NamedIndividual IRI="#Liraglutina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#Tratamiento_Gestacional_Insulina"/>
+        <NamedIndividual IRI="#NPH"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#Tratamiento_InsulinaBasalPrandial"/>
+        <NamedIndividual IRI="#Glargina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#Tratamiento_InsulinaBasalPrandial"/>
+        <NamedIndividual IRI="#Lispro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#Tratamiento_InsulinaNPH"/>
+        <NamedIndividual IRI="#NPH"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#Tratamiento_Metformina_Dieta_Ejercicio"/>
+        <NamedIndividual IRI="#Metformina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxMOD_DM1_Basal_Degludec"/>
+        <NamedIndividual IRI="#Degludec"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxMOD_DM1_Prandial_Lispro"/>
+        <NamedIndividual IRI="#Lispro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxMOD_DM2_GLP1"/>
+        <NamedIndividual IRI="#Semaglutida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxMOD_DM2_Metf_GLP1"/>
+        <NamedIndividual IRI="#Metformina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxMOD_DM2_Metf_GLP1"/>
+        <NamedIndividual IRI="#Semaglutida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxMOD_DM2_SGLT2"/>
+        <NamedIndividual IRI="#Empagliflozina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxNOM_DM1_Regular_NPH"/>
+        <NamedIndividual IRI="#NPH"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxNOM_DM1_Regular_NPH"/>
+        <NamedIndividual IRI="#Regular"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxNOM_DM2_ERC_InsulinaHumana"/>
+        <NamedIndividual IRI="#NPH"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxNOM_DM2_ERC_InsulinaHumana"/>
+        <NamedIndividual IRI="#Regular"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Metf_Glib"/>
+        <NamedIndividual IRI="#Glibenclamida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Metf_Glib"/>
+        <NamedIndividual IRI="#Metformina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Metformina"/>
+        <NamedIndividual IRI="#Metformina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Sulfonilurea"/>
+        <NamedIndividual IRI="#Glibenclamida"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#acc_corta"/>
+        <NamedIndividual IRI="#acc_corta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#acc_intermedia"/>
+        <NamedIndividual IRI="#acc_intermedia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#acc_prolongada"/>
+        <NamedIndividual IRI="#acc_prolongada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <NamedIndividual IRI="#acc_rapida"/>
+        <NamedIndividual IRI="#acc_rapida"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#Aspart"/>
+        <Literal>Insulin Aspart</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#Degludec"/>
+        <Literal>Insulin Degludec</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#Detemir"/>
+        <Literal>Insulin Detemir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneViaAdmin"/>
+        <NamedIndividual IRI="#Empagliflozina"/>
+        <Literal>Oral</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#Glargina"/>
+        <Literal>Insulin Glargine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneViaAdmin"/>
+        <NamedIndividual IRI="#Glargina"/>
+        <Literal>Subcutánea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#Glulisine"/>
+        <Literal>Insulin Glulisine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMAx"/>
+        <NamedIndividual IRI="#IMC_BajoPeso"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">18.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMin"/>
+        <NamedIndividual IRI="#IMC_BajoPeso"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMAx"/>
+        <NamedIndividual IRI="#IMC_ObesoI"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">34.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMin"/>
+        <NamedIndividual IRI="#IMC_ObesoI"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">30.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMAx"/>
+        <NamedIndividual IRI="#IMC_ObesoII"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">39.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMin"/>
+        <NamedIndividual IRI="#IMC_ObesoII"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">35.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMAx"/>
+        <NamedIndividual IRI="#IMC_ObesoIII"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">100.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMin"/>
+        <NamedIndividual IRI="#IMC_ObesoIII"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMAx"/>
+        <NamedIndividual IRI="#IMC_PesoNormal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">24.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMin"/>
+        <NamedIndividual IRI="#IMC_PesoNormal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">18.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMAx"/>
+        <NamedIndividual IRI="#IMC_SobrePeso"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">29.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMCMin"/>
+        <NamedIndividual IRI="#IMC_SobrePeso"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneViaAdmin"/>
+        <NamedIndividual IRI="#Liraglutina"/>
+        <Literal>Subcutánea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#Lispro"/>
+        <Literal>Insulin Lipro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneViaAdmin"/>
+        <NamedIndividual IRI="#Lispro"/>
+        <Literal>Subcutánea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneViaAdmin"/>
+        <NamedIndividual IRI="#Metformina"/>
+        <Literal>Oral</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#NPH"/>
+        <Literal>Insulin NPH</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneViaAdmin"/>
+        <NamedIndividual IRI="#NPH"/>
+        <Literal>Subcutánea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad"/>
+        <NamedIndividual IRI="#Paciene_T1_Joven"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad"/>
+        <NamedIndividual IRI="#Paciente_000001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad"/>
+        <NamedIndividual IRI="#Paciente_000002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">47</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad"/>
+        <NamedIndividual IRI="#Paciente_000003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">63</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad"/>
+        <NamedIndividual IRI="#Paciente_000004"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#Paciente_000004"/>
+        <Literal>Ana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad"/>
+        <NamedIndividual IRI="#Paciente_000005"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#Paciente_000005"/>
+        <Literal>Luis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#Regular"/>
+        <Literal>Insulin Human Regular</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneViaAdmin"/>
+        <NamedIndividual IRI="#Semaglutida"/>
+        <Literal>Subcutánea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDosisRec"/>
+        <NamedIndividual IRI="#Tratamiento_AgonistaGLP1"/>
+        <Literal>0.6–1.8 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <NamedIndividual IRI="#Tratamiento_AgonistaGLP1"/>
+        <Literal>1 vez/día&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <NamedIndividual IRI="#Tratamiento_EstiloDeVida"/>
+        <Literal>Diaria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <NamedIndividual IRI="#Tratamiento_Gestacional_Insulina"/>
+        <Literal>Como considere el médico.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <NamedIndividual IRI="#Tratamiento_InsulinaBasalPrandial"/>
+        <Literal>1 vez/día (basal) y 3 veces/día (rápida)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDosisRec"/>
+        <NamedIndividual IRI="#Tratamiento_InsulinaNPH"/>
+        <Literal>Individualizada. (24 unidades en la primera frecuencia y 12 en la segunda)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <NamedIndividual IRI="#Tratamiento_InsulinaNPH"/>
+        <Literal>2 veces/día</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDosisRec"/>
+        <NamedIndividual IRI="#Tratamiento_Metformina_Dieta_Ejercicio"/>
+        <Literal>850 mg&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <NamedIndividual IRI="#Tratamiento_Metformina_Dieta_Ejercicio"/>
+        <Literal>2 veces/día</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+        <NamedIndividual IRI="#TxMOD_DM1_Basal_Degludec"/>
+        <Literal>Basal ultralarga (Degludec). Recomendada por ADA por menor hipoglucemia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+        <NamedIndividual IRI="#TxMOD_DM1_Prandial_Lispro"/>
+        <Literal>Prandial rápida (Lispro/Aspart). Prandial moderna de acción rápida</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+        <NamedIndividual IRI="#TxMOD_DM2_GLP1"/>
+        <Literal>GLP-1 (Semaglutida). Recomendado en obesidad y riesgo CV.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+        <NamedIndividual IRI="#TxMOD_DM2_Metf_GLP1"/>
+        <Literal>Metformina + GLP-1, combinación ampliamente usada actual.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDosisRec"/>
+        <NamedIndividual IRI="#TxMOD_DM2_Metf_GLP1"/>
+        <Literal>Ajuste individual según respuesta clínica y tolerancia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <NamedIndividual IRI="#TxMOD_DM2_Metf_GLP1"/>
+        <Literal>Según prescripción médica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+        <NamedIndividual IRI="#TxMOD_DM2_SGLT2"/>
+        <Literal>Beneficio renal y cardiovascular.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDosisRec"/>
+        <NamedIndividual IRI="#TxMOD_DM2_SGLT2"/>
+        <Literal>Ajuste individual según respuesta clínica y tolerancia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <NamedIndividual IRI="#TxMOD_DM2_SGLT2"/>
+        <Literal>Según prescripción médica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+        <NamedIndividual IRI="#TxNOM_DM1_Regular_NPH"/>
+        <Literal>Incluido en NOM-015-SSA2-2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDosisRec"/>
+        <NamedIndividual IRI="#TxNOM_DM1_Regular_NPH"/>
+        <Literal>Ajuste individual por peso y glucosa capilar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <NamedIndividual IRI="#TxNOM_DM1_Regular_NPH"/>
+        <Literal>Regular antes de comidas + NPH 1–2 veces/día</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+        <NamedIndividual IRI="#TxNOM_DM2_ERC_InsulinaHumana"/>
+        <Literal>Recomendación NOM-015 para ERC avanzada.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Metf_Glib"/>
+        <Literal>Escalamiento terapéutico conforme a NOM-015-2010.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Metformina"/>
+        <Literal>Tratamiento base según NOM-015-2010.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDosisRec"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Metformina"/>
+        <Literal>Incremento progresivo; ajustar según función renal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Metformina"/>
+        <Literal>1–2 veces/día</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+        <NamedIndividual IRI="#TxNOM_DM2_Sulfonilurea"/>
+        <Literal>Alternativa NOM-015 en pacientes que no toleran metformina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneComentarioClinico"/>
+        <NamedIndividual IRI="#TxNOM_Prediabetes_EstiloVida"/>
+        <Literal>Intervención en estilo de vida según NOM-015-2010.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDuracion"/>
+        <NamedIndividual IRI="#acc_corta"/>
+        <Literal>3-6 horas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEfectoMax"/>
+        <NamedIndividual IRI="#acc_corta"/>
+        <Literal>2-3 horas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneInicioMinutos"/>
+        <NamedIndividual IRI="#acc_corta"/>
+        <Literal>30 minutos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDuracion"/>
+        <NamedIndividual IRI="#acc_intermedia"/>
+        <Literal>12-18 horas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEfectoMax"/>
+        <NamedIndividual IRI="#acc_intermedia"/>
+        <Literal>4-12 horas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneInicioMinutos"/>
+        <NamedIndividual IRI="#acc_intermedia"/>
+        <Literal>2-4 horas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDuracion"/>
+        <NamedIndividual IRI="#acc_prolongada"/>
+        <Literal>Hasta 24 horas o más</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEfectoMax"/>
+        <NamedIndividual IRI="#acc_prolongada"/>
+        <Literal>Pico mínimo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneInicioMinutos"/>
+        <NamedIndividual IRI="#acc_prolongada"/>
+        <Literal>Varias horas después de la inyección</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDuracion"/>
+        <NamedIndividual IRI="#acc_rapida"/>
+        <Literal>2-4 horas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEfectoMax"/>
+        <NamedIndividual IRI="#acc_rapida"/>
+        <Literal>1-2 horas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneInicioMinutos"/>
+        <NamedIndividual IRI="#acc_rapida"/>
+        <Literal>15 minutos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#aguacate"/>
+        <Literal>Aguacate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#almendra"/>
+        <Literal>Almendra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#apple"/>
+        <Literal>Apple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#arroz_integral"/>
+        <Literal>Arroz integal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#avena"/>
+        <Literal>Avena</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#berries"/>
+        <Literal>Berries</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#brocoli"/>
+        <Literal>Brocoli</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#espinaca"/>
+        <Literal>Espinacas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#lechuga"/>
+        <Literal>Lechuga</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#manzana"/>
+        <Literal>Manzana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#naranja"/>
+        <Literal>Naranja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#oliva"/>
+        <Literal>Aceite de oliva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#pechuga_pollo"/>
+        <Literal>Pechuga de pollo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#quinoa"/>
+        <Literal>Quinoa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_AlimentosProcesados"/>
+        <Literal>Se sugiere limitar la ingesta de alimentos ultraprocesados y empaquetados.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_AumentarFibra"/>
+        <Literal>Promueve el consumo de alimentos ricos en fibra como legumbres, frutas y verduras.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_BajoIG"/>
+        <Literal>Sugiere elegir alimentos con bajo índice glucémico para favorecer el control de glucosa.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_Carbohidratos"/>
+        <Literal>Se recomienda la ingesta de alimentos y/o una dieta balanceado o con bajo niveles de carbohidratos.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_ComidasRegulares"/>
+        <Literal>Promueve comer a horarios consistentes para apoyar la estabilidad metabólica.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_ControlPorciones"/>
+        <Literal>Manejar la cantidad de alimentos consumidos por comida.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_EvitarBebidasAzucaradas"/>
+        <Literal>Sugiere eliminar refrescos, bebidas endulzadas o jugos con azúcar añadida.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_GranosIntegrales"/>
+        <Literal>Recomienda sustituir granos refinados por opciones integrales.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_GranosRefinados"/>
+        <Literal>Aconseja reducir el consumo de pan blanco, arroz blanco y productos de harina refinada.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_GrasasSaludables"/>
+        <Literal>Promueve el consumo de grasas insaturadas como aceite de oliva, nueces y aguacate.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_LimitarAlimentosGIAlto"/>
+        <Literal>Limitar alimentos que elevan rápidamente la glucosa en sangre.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_PatronMediterraneo"/>
+        <Literal>Recomienda adherirse a una dieta mediterránea rica en verduras, legumbres y grasas saludables.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_ReducirAzucar"/>
+        <Literal>Es recomendable disminuir la ingesta de alimentos con azúcares añadidos.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneDescripcion"/>
+        <NamedIndividual IRI="#rec_Vegetales"/>
+        <Literal>Sugiere incrementar las porciones diarias de verduras para mejorar el control metabólico.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#salmon"/>
+        <Literal>Salmon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#tofu"/>
+        <Literal>Tofu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre"/>
+        <NamedIndividual IRI="#zanahoria"/>
+        <Literal>Zanahoria</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#esTratamientoDe"/>
+        <ObjectProperty IRI="#tieneTratamiento"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneSintomas"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tomaMedicamento"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esTratamientoDe"/>
+        <Class IRI="#Tratamiento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#realizaTestDiag"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sugerenciaActual"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneClaseFarma"/>
+        <Class IRI="#Medicamentos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneEstadoIMC"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <Class IRI="#Insulina"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneRecAlimento"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneRecDieta"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneTipoClinico"/>
+        <Class IRI="#Insulina"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneTratamiento"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <Class IRI="#Tratamiento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Genero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+        <Class IRI="#TipoDiabetes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad"/>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneSintomas"/>
+        <Class IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#SymptomPrediabetes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneSintomas"/>
+        <Class IRI="#SintomasPost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tomaMedicamento"/>
+        <Class IRI="#Medicamentos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esTratamientoDe"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#realizaTestDiag"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sugerenciaActual"/>
+        <Class IRI="#Tratamiento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneClaseFarma"/>
+        <Class IRI="#ClaseFarmacologica"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneEstadoIMC"/>
+        <Class IRI="#EstadoIMC"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tienePerfilAccion"/>
+        <Class IRI="#PerfilAccionInsulina"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneRecAlimento"/>
+        <Class IRI="#Alimento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneRecDieta"/>
+        <Class IRI="#RecomendDieta"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneTipoClinico"/>
+        <Class IRI="#TipoClinicoInsulina"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneTratamiento"/>
+        <Class IRI="#Tratamiento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usaMedicamento"/>
+        <Class IRI="#Medicamentos"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tienePeso"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBMIValue"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneAltura"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneConcentracion"/>
+        <Class IRI="#Insulina"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneCorreo"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneDosisRec"/>
+        <Class IRI="#Tratamiento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneDuracion"/>
+        <Class IRI="#PerfilAccionInsulina"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneDuracion"/>
+        <Class IRI="#Tratamiento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneEfectoMax"/>
+        <Class IRI="#PerfilAccionInsulina"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneEfectosSec"/>
+        <Class IRI="#Medicamentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <Class IRI="#Tratamiento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneGlucemiaProm"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneIMCMAx"/>
+        <Class IRI="#EstadoIMC"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneIMCMin"/>
+        <Class IRI="#EstadoIMC"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneInicioMinutos"/>
+        <Class IRI="#PerfilAccionInsulina"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombreCompleto"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tienePass"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tienePresentacion"/>
+        <Class IRI="#Medicamentos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneRacionRec"/>
+        <Class IRI="#Alimento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneRangoNormal"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneTipo"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneUnidad"/>
+        <Class IRI="#Insulina"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneUsuario"/>
+        <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneViaAdmin"/>
+        <Class IRI="#Medicamentos"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBMIValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#noToleraMetformina"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneAltura"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneConcentracion"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneCorreo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneDosisRec"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneDuracion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneEfectoMax"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneEfectosSec"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneFrecuencia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneGlucemiaProm"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneIMCMAx"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneIMCMin"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneInicioMinutos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneNombreCompleto"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tienePass"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tienePresentacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneRacionRec"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneRangoNormal"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneTipo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneUnidad"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneUsuario"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneViaAdmin"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>M4-DM2 Obesidad GLP-1 o SGLT2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tipo2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneEstadoIMC"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/estado"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#ObesidadIMC"/>
+                <Variable IRI="/estado"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sugerenciaActual"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#TxMOD_DM2_SGLT2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>N5-Prediabetes</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Prediabetes"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTratamiento"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#TxNOM_Prediabetes_EstiloVida"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>M1-DM1 Basal moderna</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tipo1"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sugerenciaActual"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#TxMOD_DM1_Basal_Degludec"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>M2-DM1 Prandial moderna</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tipo1"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sugerenciaActual"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#TxMOD_DM1_Prandial_Lispro"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Regla1-Diabetes tipo1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tipo1"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTratamiento"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tratamiento_InsulinaBasalPrandial"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>N1-DM1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tipo1"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTratamiento"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#TxNOM_DM1_Regular_NPH"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>M3-DM2 GLP-1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tipo2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sugerenciaActual"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#TxMOD_DM2_GLP1"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>N4-DM2 ERC</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tipo2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#comRenal"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTratamiento"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#TxNOM_DM2_ERC_InsulinaHumana"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Tipo 2 + sobrepeso: primera opción metformina + intervención en estilo de vida.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Regla2A-Diabetes tipo2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tipo2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneEstadoIMC"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#IMC_SobrePeso"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTratamiento"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tratamiento_Metformina_Dieta_Ejercicio"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>N3-DM2 Sobrepeso (NOM escalamiento)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tipo2"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneEstadoIMC"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#IMC_SobrePeso"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTratamiento"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#TxNOM_DM2_Metf_Glib"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>N2-DM2 (primera linea)</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tipo2"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#noToleraMetformina"/>
+                <Variable IRI="/p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTratamiento"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#TxNOM_DM2_Metformina"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>DM2 con intolerancia documentada a metformina → utilizar sulfonilurea como alternativa según NOM-015-SSA2-2010.</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>N6-Intolerancia a Metformina</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#Tipo2"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#noToleraMetformina"/>
+                <Variable IRI="/p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTratamiento"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#TxNOM_DM2_Sulfonilurea"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>M5-DM2 ERC  SGLT2 preferido</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#comRenal"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#sugerenciaActual"/>
+                <Variable IRI="/p"/>
+                <NamedIndividual IRI="#TxMOD_DM2_SGLT2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Regla-Insulina Acc_corta</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Insulina"/>
+                <Variable IRI="/i"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tienePerfilAccion"/>
+                <Variable IRI="/i"/>
+                <NamedIndividual IRI="#acc_corta"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTipoClinico"/>
+                <Variable IRI="/i"/>
+                <NamedIndividual IRI="#Bolus"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Insulinas con acción intermedia se clasifican como insulina basal</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Regla-Insulina Acc_intermedia</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Insulina"/>
+                <Variable IRI="/i"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tienePerfilAccion"/>
+                <Variable IRI="/i"/>
+                <NamedIndividual IRI="#acc_intermedia"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTipoClinico"/>
+                <Variable IRI="/i"/>
+                <NamedIndividual IRI="#Basal"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Insulinas con acción prolongada se clasifican como insulina basal</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Regla-Insulina Acc_prolongada</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Insulina"/>
+                <Variable IRI="/i"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tienePerfilAccion"/>
+                <Variable IRI="/i"/>
+                <NamedIndividual IRI="#acc_prolongada"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTipoClinico"/>
+                <Variable IRI="/i"/>
+                <NamedIndividual IRI="#Basal"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Si una insulina tiene un perfil de acción rápido, se clasifica automáticamente como insulina bolus (prandial), conforme a NOM y guías clínicas</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Regla-Insulina Acc_rapida</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Insulina"/>
+                <Variable IRI="/i"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tienePerfilAccion"/>
+                <Variable IRI="/i"/>
+                <NamedIndividual IRI="#acc_rapida"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tieneTipoClinico"/>
+                <Variable IRI="/i"/>
+                <NamedIndividual IRI="#Bolus"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#AntiGAD</IRI>
+        <Literal>Anti-Glutamato Descarboxilasa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#C_peptid</IRI>
+        <Literal>Niveles de peptido en sangre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#FPG</IRI>
+        <Literal>Glucosa en ayunas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#HBA1C</IRI>
+        <Literal>Hemoglobina A1c</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#HDL_Cholesterol</IRI>
+        <Literal>Colesterol de alta densidad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cromosoma_12</IRI>
+        <Literal>Cromosoma 12, HNF-1 alfa (antes MODY 3).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cromosoma_20</IRI>
+        <Literal>Cromosoma 20, HNF-4 alfa (antes MODY 1).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cromosoma_7</IRI>
+        <Literal>Cromosoma 7, glucocinasa (antes MODY 2).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Diabetes_Type5</IRI>
+        <Literal>La diabetes de tipo 5, antes conocida como diabetes mellitus relacionada con la malnutrición (DMRM). La DMRM se clasificó formalmente como diabetes de tipo 5 en una reunión internacional de expertos convocada en enero de 2025.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Paciente_000001</IRI>
+        <Literal>Hombre 19 años DM1 sin comorbilidades</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Paciente_000002</IRI>
+        <Literal>Mujer 47 años DM2 con Sobrepeso</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Paciente_000003</IRI>
+        <Literal>Hombre 62 años DM2 + ERC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Paciente_000005</IRI>
+        <Literal>Hombre 30 años DM1 + hipoglucemias</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tratamiento_AgonistaGLP1</IRI>
+        <Literal>Obesidad + Hipertensión</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tratamiento_Gestacional_Dieta</IRI>
+        <Literal>Diabetes gestacional controlada. Dieta y ejercicio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tratamiento_Gestacional_Insulina</IRI>
+        <Literal>Diabetes gestacional con glucosa descontrolada</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tratamiento_InsulinaBasalPrandial</IRI>
+        <Literal>Diabetes tipo1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tratamiento_InsulinaNPH</IRI>
+        <Literal>Tipo 2 con ERC (Renal crónica)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tratamiento_Metformina_Dieta_Ejercicio</IRI>
+        <Literal>Diabetes Tipo2 primera línea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TxMOD_DM1_Basal_Degludec</IRI>
+        <Literal>Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TxMOD_DM1_Prandial_Lispro</IRI>
+        <Literal>Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TxMOD_DM2_GLP1</IRI>
+        <Literal>Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TxMOD_DM2_Metf_GLP1</IRI>
+        <Literal>Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TxNOM_DM2_ERC_InsulinaHumana</IRI>
+        <Literal>Pacientes Tipo2 con Insuficiencia renal crónica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TxNOM_DM2_Metf_Glib</IRI>
+        <Literal>Escalamiento — Metformina + Glibenclamida</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TxNOM_DM2_Metformina</IRI>
+        <Literal>Primer línea — Metformina</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TxNOM_DM2_Sulfonilurea</IRI>
+        <Literal>Monoterapia — Glibenclamida</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TxNOM_Prediabetes_EstiloVida</IRI>
+        <Literal>Prediabetes - NOM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#aguacate</IRI>
+        <Literal>Aceite de aguacate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#almendra</IRI>
+        <Literal>Aceite de almendras</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#comCardiovascular</IRI>
+        <Literal>Enfermedad Cardiovascular</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#comHipertension</IRI>
+        <Literal>Hipertensión</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#comNeuropatiaD</IRI>
+        <Literal>Neuropatía Diabética</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#comObesidad</IRI>
+        <Literal>Obesidad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#comPeriodontal</IRI>
+        <Literal>Enfermedad Periodontal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#comRenal</IRI>
+        <Literal>Enfermedad Renal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#comRetinopatiaD</IRI>
+        <Literal>Retinopatía Diabética</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#oliva</IRI>
+        <Literal>Aceite de oliva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_AlimentosProcesados</IRI>
+        <Literal>Reducir alimentos procesados</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_AumentarFibra</IRI>
+        <Literal>Aumentar fibra dietética</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_BajoIG</IRI>
+        <Literal>Preferir alimentos de bajo índice glucémico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_Carbohidratos</IRI>
+        <Literal>Dieta baja en carbohidratos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_ComidasRegulares</IRI>
+        <Literal>Mantener horarios regulares de comida</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_ControlPorciones</IRI>
+        <Literal>Controlar tamaño de porciones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_EvitarBebidasAzucaradas</IRI>
+        <Literal>Evitar bebeidas azucaradas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_GranosIntegrales</IRI>
+        <Literal>Aumentar consumo de granos integrales</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_GranosRefinados</IRI>
+        <Literal>Limitar granos refinados</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_GrasasSaludables</IRI>
+        <Literal>Consumo de grasas saludables</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_LimitarAlimentosGIAlto</IRI>
+        <Literal>Limitar alimentos de alto índice glucémico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_PatronMediterraneo</IRI>
+        <Literal>Seguir patrón de dieta mediterránea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_ReducirAzucar</IRI>
+        <Literal>Reducir el consumo de azúcar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rec_Vegetales</IRI>
+        <Literal>Aumentar consumo de verduras</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

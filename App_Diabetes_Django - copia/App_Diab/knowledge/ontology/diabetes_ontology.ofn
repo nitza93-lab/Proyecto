@@ -1,0 +1,1233 @@
+Prefix(:=<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es>
+Import(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6>)
+Import(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto>)
+Annotation(rdfs:comment "Esta ontología utiliza como referencia principal la Norma Oficial Mexicana NOM-015-SSA2-2010 para la prevención, tratamiento y control de la diabetes mellitus.
+Además, se incorporan tratamientos y medicamentos modernos utilizados en guías internacionales recientes, como la American Diabetes Association (ADA) y la International Diabetes Federation (IDF).
+Las recomendaciones generadas por el sistema son informativas y no sustituyen la valoración médica.
+Cualquier medicamento, ajuste de dosis o modificación terapéutica debe ser autorizado exclusivamente por un profesional de la salud.")
+
+Declaration(Class(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>))
+Declaration(Class(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico>))
+Declaration(Class(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#AgonistaGLP1>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#BajoPeso>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Fruta>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedCombinados>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedInyectables>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PesoNormal>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#SintomasPost>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sobrepeso>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento>))
+Declaration(Class(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#esTratamientoDe>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#realizaTestDiag>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneClaseFarma>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecAlimento>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecDieta>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#hasBMIValue>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#noToleraMetformina>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneAltura>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneConcentracion>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneCorreo>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectoMax>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectosSec>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneGlucemiaProm>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneInicioMinutos>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneNombreCompleto>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePass>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePresentacion>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRacionRec>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRangoNormal>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipo>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUnidad>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUsuario>))
+Declaration(DataProperty(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Acarbosa>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alogliptina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Aspart>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Biguanidas>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Canagliflozina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_12>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_20>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_7>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Dapagliflozina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Degludec>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Detemir>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Empagliflozina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Ertugliflozina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GLP-1_agonistas>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gestacional>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gestational_Diabetes>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glibenclamida>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gliclazida>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glimepirida>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glipizida>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glulisine>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_BajoPeso>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoI>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoII>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoIII>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_PesoNormal>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_DPP-4>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_SGLT2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_alfa-glucosidasa>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulinas>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Linagliptina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Liraglutina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Meglitinidas>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_50_50>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_70_30>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_75_25>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Miglitol>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mixed>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Nateglinida>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciene_T1_Joven>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000001>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000002>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000003>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000004>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000005>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Pioglitazona>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Prediabetes>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Repaglinida>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Rosiglitazona>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Saxagliptina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Semaglutida>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sitagliptina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sulfonilureas>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#T1_DM1_Basal_Bolus>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tiazolidinedionas>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo5>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_AgonistaGLP1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_EstiloDeVida>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Dieta>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Insulina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaNPH>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Basal_Degludec>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Prandial_Lispro>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_GLP1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Sulfonilurea>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_Prediabetes_EstiloVida>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Vildagliptina>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#aguacate>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#almendra>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#apple>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#arroz_integral>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#avena>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#berries>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#brocoli>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comCardiovascular>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipertension>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipoglucemiaFrec>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comNeuropatiaD>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comObesidad>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comOtra>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comPeriodontal>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRetinopatiaD>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#espinaca>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#lechuga>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#manzana>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#naranja>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#oliva>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#pechuga_pollo>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#quinoa>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AlimentosProcesados>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AumentarFibra>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_BajoIG>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Carbohidratos>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ComidasRegulares>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ControlPorciones>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_EvitarBebidasAzucaradas>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosIntegrales>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosRefinados>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GrasasSaludables>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_LimitarAlimentosGIAlto>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_PatronMediterraneo>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ReducirAzucar>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Vegetales>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#salmon>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tofu>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#zanahoria>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero> (<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+ObjectPropertyRange(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Genero>)
+
+# Object Property: <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> (<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+ObjectPropertyRange(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes>)
+
+# Object Property: <http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad> (<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+ObjectPropertyRange(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad> <http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad>)
+
+# Object Property: <http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneSintomas> (<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneSintomas>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneSintomas> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+ObjectPropertyRange(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneSintomas> <http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#SymptomPrediabetes>)
+ObjectPropertyRange(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneSintomas> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#SintomasPost>)
+
+# Object Property: <http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tomaMedicamento> (<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tomaMedicamento>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tomaMedicamento> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+ObjectPropertyRange(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tomaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos>)
+
+# Object Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#esTratamientoDe> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#esTratamientoDe>)
+
+InverseObjectProperties(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#esTratamientoDe> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento>)
+ObjectPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#esTratamientoDe> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento>)
+ObjectPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#esTratamientoDe> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+
+# Object Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#realizaTestDiag> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#realizaTestDiag>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#realizaTestDiag> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+ObjectPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#realizaTestDiag> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico>)
+
+# Object Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+ObjectPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento>)
+
+# Object Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneClaseFarma> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneClaseFarma>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneClaseFarma> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos>)
+ObjectPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneClaseFarma> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica>)
+
+# Object Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+ObjectPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC>)
+
+# Object Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina>)
+ObjectPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina>)
+
+# Object Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecAlimento> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecAlimento>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecAlimento> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+ObjectPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecAlimento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento>)
+
+# Object Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecDieta> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecDieta>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecDieta> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+ObjectPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRecDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta>)
+
+# Object Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina>)
+ObjectPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina>)
+
+# Object Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+ObjectPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento>)
+
+# Object Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento>)
+ObjectPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad> (<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad>)
+
+DataPropertyDomain(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+
+# Data Property: <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tienePeso> (<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tienePeso>)
+
+DataPropertyDomain(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tienePeso> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#hasBMIValue> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#hasBMIValue>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#hasBMIValue> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#hasBMIValue> xsd:double)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#noToleraMetformina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#noToleraMetformina>)
+
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#noToleraMetformina> xsd:boolean)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneAltura> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneAltura>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneAltura> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneAltura> xsd:double)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneConcentracion> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneConcentracion>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneConcentracion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneConcentracion> xsd:double)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneCorreo> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneCorreo>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneCorreo> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneCorreo> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina>)
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectoMax> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectoMax>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectoMax> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectoMax> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectosSec> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectosSec>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectosSec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectosSec> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneGlucemiaProm> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneGlucemiaProm>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneGlucemiaProm> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneGlucemiaProm> xsd:double)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx> xsd:double)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin> xsd:double)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneInicioMinutos> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneInicioMinutos>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneInicioMinutos> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneInicioMinutos> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneNombreCompleto> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneNombreCompleto>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneNombreCompleto> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneNombreCompleto> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePass> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePass>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePass> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePass> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePresentacion> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePresentacion>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePresentacion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePresentacion> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRacionRec> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRacionRec>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRacionRec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRacionRec> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRangoNormal> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRangoNormal>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRangoNormal> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneRangoNormal> xsd:double)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipo> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipo>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipo> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#TestDiagnostico>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipo> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUnidad> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUnidad>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUnidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUnidad> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUsuario> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUsuario>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUsuario> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneUsuario> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin>)
+
+DataPropertyDomain(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos>)
+DataPropertyRange(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#AgonistaGLP1> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#AgonistaGLP1>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#AgonistaGLP1> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedInyectables>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#BajoPeso> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#BajoPeso>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#BajoPeso> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Fruta> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Fruta>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Fruta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedInyectables>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedCombinados> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedCombinados>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedCombinados> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedInyectables> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedInyectables>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedInyectables> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Medicamentos>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PesoNormal> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PesoNormal>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PesoNormal> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sobrepeso> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sobrepeso>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sobrepeso> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#EstadoIMC>)
+
+# Class: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras>)
+
+SubClassOf(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alimento>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Acarbosa> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Acarbosa>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Acarbosa>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alogliptina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alogliptina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Alogliptina>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Aspart> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Aspart>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Aspart>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Aspart> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Aspart> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Aspart> "Insulin Aspart")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal>)
+
+ClassAssertion(Annotation(rdfs:comment "Las insulinas basales -tambiénllamadas de acción prolongada o de fondo- se administran una o dos veces al día, normalmente por la mañana o al acostarse. Actúan lentamente para mantener estables los niveles de glucosa en sangre durante la noche o entre las comidas.") <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Biguanidas> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Biguanidas>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Biguanidas>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus>)
+
+ClassAssertion(Annotation(rdfs:comment "Las insulinas en bolo, que suelen administrarse antes de las comidas, actúan rápidamente para ayudar a controlar el rápido aumento de los niveles de glucosa después de comer. Algunas insulinas son una mezcla de insulina de fondo de acción lenta e insulina de acción rápida para las comidas.") <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Canagliflozina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Canagliflozina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Canagliflozina>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_12> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_12>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_12> "Cromosoma 12, HNF-1 alfa (antes MODY 3).")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_12>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_20> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_20>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_20> "Cromosoma 20, HNF-4 alfa (antes MODY 1).")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_20>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_7> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_7>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_7> "Cromosoma 7, glucocinasa (antes MODY 2).")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Cromosoma_7>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Dapagliflozina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Dapagliflozina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Dapagliflozina>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Degludec> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Degludec>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Degludec>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Degludec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Degludec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Degludec> "Insulin Degludec")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Detemir> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Detemir>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Detemir>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Detemir> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Detemir> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Detemir> "Insulin Detemir")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Empagliflozina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Empagliflozina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Empagliflozina>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Empagliflozina> "Oral")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Ertugliflozina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Ertugliflozina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Ertugliflozina>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GLP-1_agonistas> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GLP-1_agonistas>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GLP-1_agonistas>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gestacional> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gestacional>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gestacional>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina> "Insulin Glargine")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina> "Subcutánea")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glibenclamida> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glibenclamida>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glibenclamida>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gliclazida> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gliclazida>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Gliclazida>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glimepirida> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glimepirida>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glimepirida>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glipizida> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glipizida>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glipizida>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glulisine> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glulisine>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glulisine>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glulisine> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glulisine> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glulisine> "Insulin Glulisine")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_BajoPeso> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_BajoPeso>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#BajoPeso> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_BajoPeso>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_BajoPeso> "18.4"^^xsd:double)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_BajoPeso> "0.0"^^xsd:double)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoI> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoI>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoI>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoI> "34.9"^^xsd:double)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoI> "30.0"^^xsd:double)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoII> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoII>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoII>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoII> "39.9"^^xsd:double)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoII> "35.0"^^xsd:double)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoIII> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoIII>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoIII>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoIII> "100.0"^^xsd:double)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_ObesoIII> "40.0"^^xsd:double)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_PesoNormal> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_PesoNormal>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PesoNormal> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_PesoNormal>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_PesoNormal> "24.9"^^xsd:double)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_PesoNormal> "18.5"^^xsd:double)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sobrepeso> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMAx> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso> "29.9"^^xsd:double)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneIMCMin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso> "25.0"^^xsd:double)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_DPP-4> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_DPP-4>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_DPP-4>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_SGLT2> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_SGLT2>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_SGLT2>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_alfa-glucosidasa> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_alfa-glucosidasa>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Inhibidores_alfa-glucosidasa>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulinas> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulinas>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulinas>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Linagliptina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Linagliptina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Linagliptina>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Liraglutina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Liraglutina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#AgonistaGLP1> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Liraglutina>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Liraglutina> "Subcutánea")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro> "Insulin Lipro")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro> "Subcutánea")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Meglitinidas> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Meglitinidas>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Meglitinidas>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina> "Oral")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_50_50> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_50_50>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_50_50>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_70_30> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_70_30>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_70_30>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_75_25> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_75_25>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mezcla_75_25>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Miglitol> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Miglitol>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Miglitol>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mixed> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mixed>)
+
+ClassAssertion(Annotation(rdfs:comment "Las insulinas mixtas se administran antes de las comidas sin insulina basal a una hora diferente. Pueden ser una combinación de insulina de acción corta e intermedia o de insulina de acción rápida e intermedia. La insulina está premezclada y es turbia en lugar de transparente.") <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoClinicoInsulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Mixed>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH> "Insulin NPH")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH> "Subcutánea")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Nateglinida> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Nateglinida>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Nateglinida>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciene_T1_Joven> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciene_T1_Joven>)
+
+ClassAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciene_T1_Joven>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciene_T1_Joven> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Femenino>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciene_T1_Joven> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciene_T1_Joven> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_PesoNormal>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciene_T1_Joven> "22"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000001> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000001>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000001> "Hombre 19 años DM1 sin comorbilidades")
+ClassAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000001>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000001> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Masculino>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000001> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000001> "19"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000002> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000002>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000002> "Mujer 47 años DM2 con Sobrepeso")
+ClassAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000002>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000002> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000002> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000002> "47"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000003> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000003>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000003> "Hombre 62 años DM2 + ERC")
+ClassAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000003>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneGenero> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000003> <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Femenino>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000003> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000003> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000003> "63"^^xsd:int)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000004> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000004>)
+
+ClassAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000004>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000004> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Prediabetes>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000004> "35"^^xsd:int)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000004> "Ana")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000005> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000005>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000005> "Hombre 30 años DM1 + hipoglucemias")
+ClassAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000005>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000005> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000005> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipoglucemiaFrec>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneEdad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000005> "30"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Paciente_000005> "Luis")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Pioglitazona> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Pioglitazona>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Pioglitazona>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Prediabetes> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Prediabetes>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Prediabetes>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular> "Insulin Human Regular")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Repaglinida> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Repaglinida>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Repaglinida>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Rosiglitazona> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Rosiglitazona>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Rosiglitazona>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Saxagliptina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Saxagliptina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Saxagliptina>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Semaglutida> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Semaglutida>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#AgonistaGLP1> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Semaglutida>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneViaAdmin> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Semaglutida> "Subcutánea")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sitagliptina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sitagliptina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sitagliptina>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sulfonilureas> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sulfonilureas>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Sulfonilureas>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#T1_DM1_Basal_Bolus> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#T1_DM1_Basal_Bolus>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#T1_DM1_Basal_Bolus>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#T1_DM1_Basal_Bolus> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#T1_DM1_Basal_Bolus> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tiazolidinedionas> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tiazolidinedionas>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ClaseFarmacologica> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tiazolidinedionas>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo5> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo5>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TipoDiabetes> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo5>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_AgonistaGLP1> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_AgonistaGLP1>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_AgonistaGLP1> "Obesidad + Hipertensión")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_AgonistaGLP1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_AgonistaGLP1> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Liraglutina>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_AgonistaGLP1> "0.6–1.8 mg")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_AgonistaGLP1> "1 vez/día\"")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_EstiloDeVida> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_EstiloDeVida>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_EstiloDeVida>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_EstiloDeVida> "Diaria")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Dieta> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Dieta>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Dieta> "Diabetes gestacional controlada. Dieta y ejercicio")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Dieta>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Insulina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Insulina>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Insulina> "Diabetes gestacional con glucosa descontrolada")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Insulina>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Insulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Gestacional_Insulina> "Como considere el médico.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial> "Diabetes tipo1")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glargina>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial> "1 vez/día (basal) y 3 veces/día (rápida)")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaNPH> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaNPH>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaNPH> "Tipo 2 con ERC (Renal crónica)")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaNPH>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaNPH> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaNPH> "Individualizada. (24 unidades en la primera frecuencia y 12 en la segunda)")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaNPH> "2 veces/día")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio> "Diabetes Tipo2 primera línea")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio> "850 mg\"")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio> "2 veces/día")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Basal_Degludec> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Basal_Degludec>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Basal_Degludec> "Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Basal_Degludec>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Basal_Degludec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Degludec>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Basal_Degludec> "Basal ultralarga (Degludec). Recomendada por ADA por menor hipoglucemia")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Prandial_Lispro> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Prandial_Lispro>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Prandial_Lispro> "Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Prandial_Lispro>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Prandial_Lispro> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Lispro>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Prandial_Lispro> "Prandial rápida (Lispro/Aspart). Prandial moderna de acción rápida")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_GLP1> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_GLP1>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_GLP1> "Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_GLP1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_GLP1> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Semaglutida>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_GLP1> "GLP-1 (Semaglutida). Recomendado en obesidad y riesgo CV.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1> "Medicamento no incluido en la NOM-015-2010. Recomendación basada en guías ADA/IDF recientes.")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Semaglutida>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1> "Metformina + GLP-1, combinación ampliamente usada actual.")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1> "Ajuste individual según respuesta clínica y tolerancia")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_Metf_GLP1> "Según prescripción médica")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Empagliflozina>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2> "Beneficio renal y cardiovascular.")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2> "Ajuste individual según respuesta clínica y tolerancia")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2> "Según prescripción médica")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH> "Incluido en NOM-015-SSA2-2010")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH> "Ajuste individual por peso y glucosa capilar")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH> "Regular antes de comidas + NPH 1–2 veces/día")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana> "Pacientes Tipo2 con Insuficiencia renal crónica")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#NPH>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Regular>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana> "Recomendación NOM-015 para ERC avanzada.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib> "Escalamiento — Metformina + Glibenclamida")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glibenclamida>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib> "Escalamiento terapéutico conforme a NOM-015-2010.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina> "Primer línea — Metformina")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Metformina>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina> "Tratamiento base según NOM-015-2010.")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDosisRec> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina> "Incremento progresivo; ajustar según función renal")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneFrecuencia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina> "1–2 veces/día")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Sulfonilurea> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Sulfonilurea>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Sulfonilurea> "Monoterapia — Glibenclamida")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Sulfonilurea>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#usaMedicamento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Sulfonilurea> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Glibenclamida>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Sulfonilurea> "Alternativa NOM-015 en pacientes que no toleran metformina")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_Prediabetes_EstiloVida> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_Prediabetes_EstiloVida>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_Prediabetes_EstiloVida> "Prediabetes - NOM")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_Prediabetes_EstiloVida>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneComentarioClinico> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_Prediabetes_EstiloVida> "Intervención en estilo de vida según NOM-015-2010.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Vildagliptina> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Vildagliptina>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#MedOrales> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Vildagliptina>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta> "3-6 horas")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectoMax> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta> "2-3 horas")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneInicioMinutos> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta> "30 minutos")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia> "12-18 horas")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectoMax> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia> "4-12 horas")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneInicioMinutos> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia> "2-4 horas")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada> "Hasta 24 horas o más")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectoMax> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada> "Pico mínimo")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneInicioMinutos> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada> "Varias horas después de la inyección")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#PerfilAccionInsulina> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDuracion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida> "2-4 horas")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEfectoMax> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida> "1-2 horas")
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneInicioMinutos> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida> "15 minutos")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#aguacate> (Aceite de aguacate)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#aguacate> "Aceite de aguacate")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#aguacate>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#aguacate> "Aguacate")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#almendra> (Aceite de almendras)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#almendra> "Aceite de almendras")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#almendra>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#almendra> "Almendra")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#apple> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#apple>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#apple> "Apple")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#arroz_integral> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#arroz_integral>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#arroz_integral>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#arroz_integral> "Arroz integal")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#avena> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#avena>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#avena>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#avena> "Avena")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#berries> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#berries>)
+
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#berries> "Berries")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#brocoli> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#brocoli>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#brocoli>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#brocoli> "Brocoli")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comCardiovascular> (Enfermedad Cardiovascular)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comCardiovascular> "Enfermedad Cardiovascular")
+ClassAssertion(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comCardiovascular>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipertension> (Hipertensión)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipertension> "Hipertensión")
+ClassAssertion(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipertension>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipoglucemiaFrec> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipoglucemiaFrec>)
+
+ClassAssertion(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comHipoglucemiaFrec>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comNeuropatiaD> (Neuropatía Diabética)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comNeuropatiaD> "Neuropatía Diabética")
+ClassAssertion(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comNeuropatiaD>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comObesidad> (Obesidad)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comObesidad> "Obesidad")
+ClassAssertion(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comObesidad>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comOtra> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comOtra>)
+
+ClassAssertion(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comOtra>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comPeriodontal> (Enfermedad Periodontal)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comPeriodontal> "Enfermedad Periodontal")
+ClassAssertion(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comPeriodontal>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal> (Enfermedad Renal)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal> "Enfermedad Renal")
+ClassAssertion(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRetinopatiaD> (Retinopatía Diabética)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRetinopatiaD> "Retinopatía Diabética")
+ClassAssertion(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#Comorbilidad> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRetinopatiaD>)
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#espinaca> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#espinaca>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#espinaca>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#espinaca> "Espinacas")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#lechuga> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#lechuga>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#lechuga>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#lechuga> "Lechuga")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#manzana> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#manzana>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Fruta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#manzana>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#manzana> "Manzana")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#naranja> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#naranja>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Fruta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#naranja>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#naranja> "Naranja")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#oliva> (Aceite de oliva)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#oliva> "Aceite de oliva")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GrasaSaludable> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#oliva>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#oliva> "Aceite de oliva")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#pechuga_pollo> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#pechuga_pollo>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#pechuga_pollo>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#pechuga_pollo> "Pechuga de pollo")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#quinoa> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#quinoa>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#GranoIntegral> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#quinoa>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#quinoa> "Quinoa")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AlimentosProcesados> (Reducir alimentos procesados)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AlimentosProcesados> "Reducir alimentos procesados")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AlimentosProcesados>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AlimentosProcesados> "Se sugiere limitar la ingesta de alimentos ultraprocesados y empaquetados.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AumentarFibra> (Aumentar fibra dietética)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AumentarFibra> "Aumentar fibra dietética")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AumentarFibra>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_AumentarFibra> "Promueve el consumo de alimentos ricos en fibra como legumbres, frutas y verduras.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_BajoIG> (Preferir alimentos de bajo índice glucémico)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_BajoIG> "Preferir alimentos de bajo índice glucémico")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_BajoIG>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_BajoIG> "Sugiere elegir alimentos con bajo índice glucémico para favorecer el control de glucosa.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Carbohidratos> (Dieta baja en carbohidratos.)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Carbohidratos> "Dieta baja en carbohidratos.")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Carbohidratos>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Carbohidratos> "Se recomienda la ingesta de alimentos y/o una dieta balanceado o con bajo niveles de carbohidratos.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ComidasRegulares> (Mantener horarios regulares de comida)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ComidasRegulares> "Mantener horarios regulares de comida")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ComidasRegulares>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ComidasRegulares> "Promueve comer a horarios consistentes para apoyar la estabilidad metabólica.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ControlPorciones> (Controlar tamaño de porciones)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ControlPorciones> "Controlar tamaño de porciones")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ControlPorciones>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ControlPorciones> "Manejar la cantidad de alimentos consumidos por comida.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_EvitarBebidasAzucaradas> (Evitar bebeidas azucaradas)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_EvitarBebidasAzucaradas> "Evitar bebeidas azucaradas")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_EvitarBebidasAzucaradas>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_EvitarBebidasAzucaradas> "Sugiere eliminar refrescos, bebidas endulzadas o jugos con azúcar añadida.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosIntegrales> (Aumentar consumo de granos integrales)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosIntegrales> "Aumentar consumo de granos integrales")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosIntegrales>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosIntegrales> "Recomienda sustituir granos refinados por opciones integrales.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosRefinados> (Limitar granos refinados)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosRefinados> "Limitar granos refinados")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosRefinados>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GranosRefinados> "Aconseja reducir el consumo de pan blanco, arroz blanco y productos de harina refinada.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GrasasSaludables> (Consumo de grasas saludables)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GrasasSaludables> "Consumo de grasas saludables")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GrasasSaludables>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_GrasasSaludables> "Promueve el consumo de grasas insaturadas como aceite de oliva, nueces y aguacate.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_LimitarAlimentosGIAlto> (Limitar alimentos de alto índice glucémico)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_LimitarAlimentosGIAlto> "Limitar alimentos de alto índice glucémico")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_LimitarAlimentosGIAlto>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_LimitarAlimentosGIAlto> "Limitar alimentos que elevan rápidamente la glucosa en sangre.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_PatronMediterraneo> (Seguir patrón de dieta mediterránea)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_PatronMediterraneo> "Seguir patrón de dieta mediterránea")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_PatronMediterraneo>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_PatronMediterraneo> "Recomienda adherirse a una dieta mediterránea rica en verduras, legumbres y grasas saludables.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ReducirAzucar> (Reducir el consumo de azúcar)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ReducirAzucar> "Reducir el consumo de azúcar")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ReducirAzucar>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_ReducirAzucar> "Es recomendable disminuir la ingesta de alimentos con azúcares añadidos.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Vegetales> (Aumentar consumo de verduras)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Vegetales> "Aumentar consumo de verduras")
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#RecomendDieta> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Vegetales>)
+DataPropertyAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneDescripcion> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#rec_Vegetales> "Sugiere incrementar las porciones diarias de verduras para mejorar el control metabólico.")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#salmon> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#salmon>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#salmon>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#salmon> "Salmon")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tofu> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tofu>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ProteinaNegra> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tofu>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tofu> "Tofu")
+
+# Individual: <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#zanahoria> (<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#zanahoria>)
+
+ClassAssertion(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Verduras> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#zanahoria>)
+DataPropertyAssertion(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneNombre> <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#zanahoria> "Zanahoria")
+
+
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "M4-DM2 Obesidad GLP-1 o SGLT2") Body(ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)) ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>) ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC> Variable(:p) Variable(:estado)) ClassAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#ObesidadIMC> Variable(:estado)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "N5-Prediabetes") Body(ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Prediabetes>) ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_Prediabetes_EstiloVida>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "M1-DM1 Basal moderna") Body(ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1>) ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Basal_Degludec>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "M2-DM1 Prandial moderna") Body(ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1>) ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM1_Prandial_Lispro>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "Regla1-Diabetes tipo1") Body(ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1>) ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_InsulinaBasalPrandial>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "N1-DM1") Body(ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo1>) ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM1_Regular_NPH>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "M3-DM2 GLP-1") Body(ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>) ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_GLP1>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "N4-DM2 ERC") Body(ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)) ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>) ObjectPropertyAtom(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal>))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_ERC_InsulinaHumana>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Tipo 2 + sobrepeso: primera opción metformina + intervención en estilo de vida.") Annotation(rdfs:label "Regla2A-Diabetes tipo2") Body(ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)) ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>) ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso>))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tratamiento_Metformina_Dieta_Ejercicio>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "N3-DM2 Sobrepeso (NOM escalamiento)") Body(ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)) ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>) ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneEstadoIMC> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#IMC_SobrePeso>))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metf_Glib>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "N2-DM2 (primera linea)") Body(ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)) ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>) DataPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#noToleraMetformina> Variable(:p) "false"^^xsd:boolean))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Metformina>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "DM2 con intolerancia documentada a metformina → utilizar sulfonilurea como alternativa según NOM-015-SSA2-2010.") Annotation(rdfs:label "N6-Intolerancia a Metformina") Body(ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)) ObjectPropertyAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#tieneTipoDM> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Tipo2>) DataPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#noToleraMetformina> Variable(:p) "true"^^xsd:boolean))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTratamiento> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxNOM_DM2_Sulfonilurea>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "M5-DM2 ERC  SGLT2 preferido") Body(ObjectPropertyAtom(<http://www.semanticweb.org/khaled/ontologies/2024/7/CDMOnto#tieneComorbilidad> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#comRenal>) ClassAtom(<http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#Paciente> Variable(:p)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#sugerenciaActual> Variable(:p) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#TxMOD_DM2_SGLT2>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "Regla-Insulina Acc_corta") Body(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> Variable(:i) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_corta>) ClassAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> Variable(:i)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> Variable(:i) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Insulinas con acción intermedia se clasifican como insulina basal") Annotation(rdfs:label "Regla-Insulina Acc_intermedia") Body(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> Variable(:i) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_intermedia>) ClassAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> Variable(:i)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> Variable(:i) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Insulinas con acción prolongada se clasifican como insulina basal") Annotation(rdfs:label "Regla-Insulina Acc_prolongada") Body(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> Variable(:i) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_prolongada>) ClassAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> Variable(:i)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> Variable(:i) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Basal>)))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Si una insulina tiene un perfil de acción rápido, se clasifica automáticamente como insulina bolus (prandial), conforme a NOM y guías clínicas") Annotation(rdfs:label "Regla-Insulina Acc_rapida") Body(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tienePerfilAccion> Variable(:i) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#acc_rapida>) ClassAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Insulina> Variable(:i)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#tieneTipoClinico> Variable(:i) <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Bolus>)))
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#AntiGAD> "Anti-Glutamato Descarboxilasa")
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#C_peptid> "Niveles de peptido en sangre")
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#FPG> "Glucosa en ayunas")
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#HBA1C> "Hemoglobina A1c")
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/begum/ontologies/2018/10/untitled-ontology-6#HDL_Cholesterol> "Colesterol de alta densidad")
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/nitza/ontologies/2025/10/untitled-ontology-es#Diabetes_Type5> "La diabetes de tipo 5, antes conocida como diabetes mellitus relacionada con la malnutrición (DMRM). La DMRM se clasificó formalmente como diabetes de tipo 5 en una reunión internacional de expertos convocada en enero de 2025.")
+)
